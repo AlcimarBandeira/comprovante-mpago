@@ -3,7 +3,7 @@ function limparTexto(texto) {
         .split("\n")
         .filter(linha => {
             const l = linha.toLowerCase();
-            return !l.includes("ticket") && !l.includes("card")&& !l.includes("calendar");
+            return !l.includes("ticket") && !l.includes("card");
         });
 }
 
@@ -36,3 +36,4 @@ function imprimir() {
     window.print();
 
 }
+
